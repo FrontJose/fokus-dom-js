@@ -9,6 +9,8 @@ const musicaFocoInput = document.querySelector('#alternar-musica')
 const musica = new Audio('/sons/luna-rise-part-one.mp3')
 musica.loop = true
 
+let tempoDecorridoEmSegundos = 5
+
 musicaFocoInput.addEventListener('change', () => {
     if(musica.paused) {
         musica.play()
@@ -56,4 +58,8 @@ function alterarContexto(contexto) {
             break;
 
     }
+}
+
+const contagemRegressiva = () => {
+    
 }
